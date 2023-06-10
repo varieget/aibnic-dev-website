@@ -1,0 +1,68 @@
+@import 'vars';
+
+:root {
+  --color-1: #e6feff;
+  --color-2: #abf8ff;
+  --color-3: #82f0ff;
+  --color-4: #59e6ff;
+  --color-5: #2fd5fa;
+  --color-6: #06bcee;
+  --color-7: #0095c7;
+  --color-8: #0073a1;
+  --color-9: #00547a;
+  --color-10: #003754;
+  --body-background: #e7e8eb;
+  --component-background: #fff;
+  --secondary-background: #{$background-color-secondary};
+  --border-color: #{$border-color-base};
+  --text-color: #{$text-color};
+  --text-color-secondary: #{$text-color-secondary};
+  --text-color-desc: #{$text-color-desc};
+  --text-color-inverse: #{$text-color-inverse};
+  --btn-color: #f8f8f8;
+  --btn-color-hover: #dedede;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  font-size: $font-size-base;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  line-height: $line-height-base;
+  background-color: var(--body-background);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color);
+  font-weight: normal;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+.com-hide {
+  display: none;
+}
+
+.com-section {
+  background-color: var(--component-background);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+}

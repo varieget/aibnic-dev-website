@@ -1,0 +1,51 @@
+@import 'mixins';
+
+$primary-color: var(--color-6); // 全局主色
+$info-color: $primary-color;
+$success-color: #52c41a; // 成功色
+$processing-color: var(--color-6);
+$error-color: #f5222d; // 错误色
+$highlight-color: var(--color-4);
+$warning-color: #faad14; // 警告色
+$normal-color: #d9d9d9;
+$white: #fff;
+$black: #000;
+
+$disabled-color: rgba(0, 0, 0, 0.25); // 失效色
+$box-shadow-base: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
+  0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05); // 浮层阴影
+
+$icon-color: inherit;
+$icon-color-hover: fade-in($black, 0.75);
+
+// 字体颜色
+$text-color: fade-in($black, 0.85);
+$text-color-secondary: #666;
+$text-color-desc: #888;
+$text-color-inverse: $white;
+
+$text-color-dark: fade-in($white, 0.85);
+$text-color-secondary-dark: #ccc;
+$text-color-desc-dark: #aaa;
+
+// 字体大小
+$font-size-base: 14px;
+$font-size-lg: $font-size-base + 2px;
+$font-size-sm: $font-size-base - 2px;
+
+$line-height-base: 22px;
+
+// 链接
+$link-color: var(--color-5);
+
+// 边框
+$border-width-base: 1px;
+$border-style-base: solid;
+$border-color-base: #e7e7eb;
+$border-color-inverse: rgba(255, 255, 255, 0.1);
+
+$border-radius-base: 2px;
+$border-radius-sm: $border-radius-base;
+
+// background
+$background-color-secondary: #f4f5f9;

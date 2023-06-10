@@ -1,0 +1,63 @@
+@import 'global/vars';
+
+#sidemenu {
+  font-size: $font-size-base;
+  border-top: $border-width-base $border-style-base $primary-color;
+
+  .menu-item {
+    &:not(:last-child) {
+      border-bottom: $border-width-base $border-style-base var(--border-color);
+    }
+
+    .menu-name {
+      border-bottom: $border-width-base $border-style-base var(--border-color);
+
+      p {
+        padding: 10px 10px 10px 30px;
+        margin: 0;
+      }
+
+      a {
+        color: var(--text-color);
+        text-decoration: none;
+        padding: 12px 0 12px 30px;
+        display: block;
+
+        &:hover {
+          background-color: var(--secondary-background);
+        }
+      }
+    }
+
+    .submenu {
+      .submenu-item {
+        .item-link {
+          display: block;
+          text-decoration: none;
+          padding: 12px 30px;
+          color: var(--text-color);
+          font-size: $font-size-sm;
+          line-height: 1.2;
+
+          &:hover {
+            background-color: var(--secondary-background);
+          }
+        }
+
+        &.current {
+          .item-link {
+            background-color: $primary-color;
+            color: #fff;
+          }
+        }
+      }
+
+      &.scrollabled {
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: relative;
+        height: 234px;
+      }
+    }
+  }
+}

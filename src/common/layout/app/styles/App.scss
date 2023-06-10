@@ -1,0 +1,79 @@
+@import 'global/vars';
+
+.main.app {
+  .container_box {
+    @include fixed-max-width;
+    padding: 36px;
+
+    @include mobile-mode {
+      padding: 10px 0;
+    }
+
+    .container_bd {
+      display: flex;
+
+      @include mobile-mode {
+        flex-direction: column;
+      }
+
+      #main {
+        flex: 2 0;
+        margin: 0 10px;
+
+        .main_hd {
+          > h2 {
+            font-size: 16px;
+            font-weight: 400;
+            padding: 30px;
+            margin: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+
+        .main_bd {
+          padding: 30px;
+
+          p {
+            color: $text-color;
+            font-size: 16px;
+            text-indent: 36px;
+          }
+        }
+
+        .main_ft {
+          padding: 10px;
+          display: flex;
+          justify-content: center;
+        }
+
+        &.split {
+          background-color: transparent;
+          box-shadow: none;
+
+          .main_hd {
+            margin-bottom: 16px;
+          }
+
+          .main_bd {
+            margin-bottom: 16px;
+            padding: 0;
+          }
+
+          .main_ft {
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      #sidebar {
+        margin: 0 10px;
+        flex: 1 0;
+
+        > div {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}

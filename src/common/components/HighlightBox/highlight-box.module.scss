@@ -1,0 +1,54 @@
+@import 'global/vars';
+
+.highlight_box {
+  position: relative;
+  padding: 9px 30px;
+  background-color: var(--secondary-background);
+  border-top: $border-width-base $border-style-base var(--border-color);
+
+  .box_btn {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    bottom: 0;
+
+    label {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &::after {
+      content: ' ';
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    a {
+      margin: 0 2px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .box_title {
+    margin: 0;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .box_main {
+    color: var(--text-color-desc);
+    overflow: hidden;
+
+    span {
+      display: block;
+    }
+  }
+}
