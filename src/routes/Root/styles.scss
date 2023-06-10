@@ -38,6 +38,10 @@
 
     dt {
       float: left;
+
+      @include mobile-mode {
+        width: 100%;
+      }
     }
 
     dd {
@@ -62,6 +66,10 @@
       margin-bottom: 10px;
       padding: 33px 80px;
       border: 1px solid #e7e7eb;
+
+      @include mobile-mode {
+        padding: 33px;
+      }
 
       .icon_mp_kind {
         margin-right: 30px;
@@ -105,14 +113,29 @@
     }
 
     .mp_kind_mod_bd {
+      display: flex;
+
+      @include mobile-mode {
+        flex-direction: column;
+      }
+
       .mp_kind_wrp {
-        display: inline-block;
-        width: 325px;
+        flex: 1;
         height: 304px;
-        margin-right: 3px;
+        margin-right: 10px;
+        margin-bottom: 10px;
         border: 1px solid #e7e7eb;
         position: relative;
         background-color: #fff;
+
+        @include mobile-mode {
+          flex: none;
+          margin-right: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
 
         .mp_kind_box {
           position: absolute;

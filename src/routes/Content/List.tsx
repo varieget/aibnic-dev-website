@@ -85,7 +85,7 @@ function IndexList() {
             />
           </div>
           <div className={classNames('main_ft', { 'com-section': true })}>
-            <Pagination defaultCurrent={6} total={500} />
+            <Pagination defaultCurrent={1} total={50} />
           </div>
         </div>
         <div id="sidebar">

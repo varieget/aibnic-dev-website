@@ -5,7 +5,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { Link } from 'react-router-dom';
-import { Button, Space } from 'antd';
+import { Button } from 'antd';
 import {
   PushpinTwoTone,
   WarningTwoTone,
@@ -102,90 +102,84 @@ function Root() {
             </ul>
           </div>
           <div className="mp_kind_mod_bd">
-            <Space size={8} wrap>
-              <div className="mp_kind_wrp">
-                <div className="mp_kind_box">
-                  <dl className="mp_kind">
-                    <dt className="name">
-                      <span className="icon_mp_kind">
-                        <WarningTwoTone
-                          style={{ fontSize: '80px' }}
-                          twoToneColor="#00B4FF"
-                        />
-                      </span>
-                      相关规定
-                    </dt>
-                    <dd>暂无新增信息</dd>
-                  </dl>
-                  <div className="mp_option_box">
-                    <Button type="primary">查看详情</Button>
-                    <div className="mp_option_links">
-                      此栏目暂无任何新增信息
-                    </div>
+            <div className="mp_kind_wrp">
+              <div className="mp_kind_box">
+                <dl className="mp_kind">
+                  <dt className="name">
+                    <span className="icon_mp_kind">
+                      <WarningTwoTone
+                        style={{ fontSize: '80px' }}
+                        twoToneColor="#00B4FF"
+                      />
+                    </span>
+                    相关规定
+                  </dt>
+                  <dd>暂无新增信息</dd>
+                </dl>
+                <div className="mp_option_box">
+                  <Button type="primary">查看详情</Button>
+                  <div className="mp_option_links">此栏目暂无任何新增信息</div>
+                </div>
+              </div>
+            </div>
+            <div className="mp_kind_wrp">
+              <div className="mp_kind_box">
+                <dl className="mp_kind">
+                  <dt className="name">
+                    <span className="icon_mp_kind">
+                      <MessageTwoTone
+                        style={{ fontSize: '80px' }}
+                        twoToneColor="#00B4FF"
+                      />
+                    </span>
+                    党建工作
+                  </dt>
+                  <dd>
+                    主题教育进行时|网络中心党支部开展主题教育动员，有的放矢精准推进调查研究
+                  </dd>
+                </dl>
+                <div className="mp_option_box">
+                  <Button type="primary">查看详情</Button>
+                  <div className="mp_option_links">
+                    <a href="" target="_blank">
+                      主题教育进行时
+                    </a>
+                    <span> | </span>
+                    <a href="" target="_blank">
+                      我为群众办实事
+                    </a>
                   </div>
                 </div>
               </div>
-              <div className="mp_kind_wrp">
-                <div className="mp_kind_box">
-                  <dl className="mp_kind">
-                    <dt className="name">
-                      <span className="icon_mp_kind">
-                        <MessageTwoTone
-                          style={{ fontSize: '80px' }}
-                          twoToneColor="#00B4FF"
-                        />
-                      </span>
-                      党建工作
-                    </dt>
-                    <dd>
-                      主题教育进行时|网络中心党支部开展主题教育动员，有的放矢精准推进调查研究
-                    </dd>
-                  </dl>
-                  <div className="mp_option_box">
-                    <Button type="primary" href="/5">
-                      查看详情
-                    </Button>
-                    <div className="mp_option_links">
-                      <a href="" target="_blank">
-                        主题教育进行时
-                      </a>
-                      <span> | </span>
-                      <a href="" target="_blank">
-                        我为群众办实事
-                      </a>
-                    </div>
+            </div>
+            <div className="mp_kind_wrp">
+              <div className="mp_kind_box">
+                <dl className="mp_kind">
+                  <dt className="name">
+                    <span className="icon_mp_kind">
+                      <NotificationTwoTone
+                        style={{ fontSize: '80px' }}
+                        twoToneColor="#00B4FF"
+                      />
+                    </span>
+                    信息公告
+                  </dt>
+                  <dd>关于宿舍区校园网络光纤入户改造的通知</dd>
+                </dl>
+                <div className="mp_option_box">
+                  <Button type="primary">查看详情</Button>
+                  <div className="mp_option_links">
+                    <a href="" target="_blank">
+                      宿舍区校园网络
+                    </a>
+                    <span> | </span>
+                    <a href="" target="_blank">
+                      新版虚拟校园卡
+                    </a>
                   </div>
                 </div>
               </div>
-              <div className="mp_kind_wrp">
-                <div className="mp_kind_box">
-                  <dl className="mp_kind">
-                    <dt className="name">
-                      <span className="icon_mp_kind">
-                        <NotificationTwoTone
-                          style={{ fontSize: '80px' }}
-                          twoToneColor="#00B4FF"
-                        />
-                      </span>
-                      信息公告
-                    </dt>
-                    <dd>关于宿舍区校园网络光纤入户改造的通知</dd>
-                  </dl>
-                  <div className="mp_option_box">
-                    <Button type="primary">查看详情</Button>
-                    <div className="mp_option_links">
-                      <a href="" target="_blank">
-                        宿舍区校园网络
-                      </a>
-                      <span> | </span>
-                      <a href="" target="_blank">
-                        新版虚拟校园卡
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Space>
+            </div>
           </div>
         </div>
       </div>
