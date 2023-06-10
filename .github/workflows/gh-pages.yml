@@ -35,6 +35,9 @@ jobs:
         run: |
           npm install
           npm run build
+      - name: Create 404 page for SPA
+        run: |
+          cp index.html 404.html
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
