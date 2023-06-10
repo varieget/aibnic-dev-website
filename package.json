@@ -2,6 +2,7 @@
   "name": "aib-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://varieget.github.io/aibnic-dev-website",
   "dependencies": {
     "@types/node": "^16.11.35",
     "@types/react": "^18.0.9",
