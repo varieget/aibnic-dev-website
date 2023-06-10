@@ -9,7 +9,7 @@ import NoData from 'routes/Content/NoData';
 
 function Router() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/aibnic-dev-website">
       <App>
         <Routes>
           <Route path="/" element={<Root />} />
